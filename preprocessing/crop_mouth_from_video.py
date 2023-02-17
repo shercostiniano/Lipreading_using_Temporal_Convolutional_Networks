@@ -35,6 +35,7 @@ for filename_idx, line in enumerate(lines):
     print(f'idx: {filename_idx} \tProcessing.\t{filename}')
 
     video_filename = os.path.join(args.video_direc, filename+'.mp4')
+    print(f"Filename: {video_filename}")
     landmarks_filename = os.path.join(args.landmark_direc, filename+'.pkl')
     dst_filename = os.path.join( args.save_direc, filename+'.npz')
 
